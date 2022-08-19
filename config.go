@@ -17,8 +17,10 @@ const (
 
 // LogConfig log config
 type LogConfig struct {
-	Level         string               `json:"level" mapstructure:"level"`
-	Debug         bool                 `json:"debug" mapstructure:"debug"` // output log info or not for go-log
+	//Global level
+	Level string `json:"level" mapstructure:"level"`
+	Debug bool   `json:"debug" mapstructure:"debug"` // output log info or not for go-log
+	//If display full path of the file which log belongs to
 	FullPath      bool                 `json:"full_path" mapstructure:"full_path"`
 	ConsoleWriter ConsoleWriterOptions `json:"console_writer" mapstructure:"console_writer"`
 	FileWriter    FileWriterOptions    `json:"file_writer" mapstructure:"file_writer"`
