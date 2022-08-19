@@ -62,4 +62,4 @@ golog.Access("this is access log")
 
 ## License
 
-Use of go-log is governed by the Mit License
+Use of go-log is governed by the MIT License
